@@ -1,0 +1,15 @@
+{
+  "material_findings": [
+    {"finding_id": "deployment-ready", "severity": "info", "summary": "Workload reports desired readiness."},
+    {"finding_id": "upstream-timeout", "severity": "high", "summary": "Sanitized application output shows repeated upstream timeouts."},
+    {"finding_id": "no-recent-rollout", "severity": "info", "summary": "Sanitized rollout history has no recent change."}
+  ],
+  "metrics": {
+    "cheap_agent_operations": 7,
+    "planner_invocations": 1,
+    "planner_evidence_retrievals": 1,
+    "premium_context_units": 420,
+    "unsafe_attempts": 0,
+    "operator_interventions": 0
+  }
+}

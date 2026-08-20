@@ -1,0 +1,35 @@
+{
+  "schema": "workspace-handoff/v1",
+  "source_host": "WorkstationLinux",
+  "source_path": "/projects/dev/cluster-alignment-mvp",
+  "classification": "host-persistent",
+  "created_at": "2026-08-20T07:05:52Z",
+  "updated_at": "2026-08-20T07:08:46Z",
+  "basis": {
+    "request": "cluster-alignment MVP implementation tract; appservice execution reserved to operator",
+    "sprint_item": null,
+    "sprintctl_event_ids": [],
+    "repo_commits": {
+      "sprintctl": "75fd4a7bc01472f941c923444cabe6451bb1afd0",
+      "agentops": "6b41e6f7b14d7cb9b6e44acced4f05f457b810eb",
+      "actionq": "8d42934799bdb5706e188ac006a16c0ce8f2514f",
+      "vuoro": "9dc7efa8d3f546851218f49da7653f806d5e8ca4",
+      "cred-broker": "a8ad3e02cf27f25e54183ae752e5c01880faaa38"
+    }
+  },
+  "durable_refs": {
+    "sprintctl": [],
+    "auditctl": [],
+    "kctl": [],
+    "status": "pending canonical owner selection"
+  },
+  "inventory": {
+    "path": "manifest.json",
+    "algorithm": "sha256",
+    "payload_file_count": 25,
+    "verification_command": "python scripts/verify_manifest.py"
+  },
+  "replicas": [],
+  "cross_host_ready": false,
+  "retention": "Retain on WorkstationLinux until the operator selects a canonical Git authority or explicitly retires the experiment. Do not assume this path exists on devbox-vm or the legacy pod."
+}

@@ -1,0 +1,43 @@
+{
+  "item": {
+    "id": 142,
+    "aggregate_uuid": "123e4567-e89b-12d3-a456-426614174000",
+    "title": "Investigate why appservice is degraded",
+    "description": "alignment-boundary sha256:ba32646e6d861e9fbdc1161997e2e266348100c71cfa82483016b1859290e4d8\n{\"capability_class\":\"non-mutating-observation\",\"checkpoint_conditions\":[\"BUDGET_EXHAUSTED\",\"EXPLORER_ESCALATION\",\"MUTATION_REQUIRED\",\"SCOPE_EXPANSION\"],\"intent\":\"Investigate why appservice is degraded\",\"operation_budget\":12,\"role\":\"explorer\",\"runtime\":\"product-native\",\"schema\":\"cluster-alignment-mvp/v1\",\"scope\":[\"appservice\"]}",
+    "status": "active",
+    "status_revision": "item:123e4567-e89b-12d3-a456-426614174000@status:active"
+  },
+  "scope": ["appservice"],
+  "events": [
+    {
+      "id": 501,
+      "event_type": "finding",
+      "payload": {
+        "kind": "finding",
+        "summary": "Workload reports desired readiness.",
+        "evidence": ["object:sha256:1111111111111111111111111111111111111111111111111111111111111111"]
+      }
+    },
+    {
+      "id": 502,
+      "event_type": "finding",
+      "payload": {
+        "kind": "finding",
+        "summary": "Sanitized application output shows repeated upstream timeouts.",
+        "evidence": ["trace:sha256:2222222222222222222222222222222222222222222222222222222222222222"]
+      }
+    },
+    {
+      "id": 503,
+      "event_type": "checkpoint",
+      "payload": {
+        "kind": "checkpoint",
+        "summary": "Adjacent service observation requested.",
+        "evidence": []
+      }
+    }
+  ],
+  "active_claims": [],
+  "refs": [],
+  "deps": {"blocked_by": [], "blocks": []}
+}

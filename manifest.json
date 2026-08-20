@@ -1,0 +1,42 @@
+{
+  "name": "cluster-alignment-mvp",
+  "version": "0.2.1",
+  "classification": "host-persistent",
+  "manifest_scope": "All package payload files except manifest.json itself; self-hashing would be circular.",
+  "purpose": "Read-only executable proof for bounded native-runtime cluster investigation and stateless alignment.",
+  "constraints": [
+    "no appservice dispatch, orchestration, reconciliation, deployment, or live cluster mutation",
+    "no persistent service or Sprintctl schema",
+    "no ActionQ runner/daemon dependency",
+    "no Outctl dependency",
+    "Sprintctl status decisions carry expected-revision basis",
+    "planner emits CONTINUE, REFRAME, or STOP only"
+  ],
+  "files": [
+    {"path": "ACCEPTANCE_TESTS.md", "sha256": "6bbc5adb78fda097b1f7a9e48da2f4ac55ab6d0762bb22e230ee1402468b227e", "bytes": 3239},
+    {"path": "ALIGNMENT.md", "sha256": "d2eeab220e763f160d2a33140bbd5004e4df22e1fd50d8cdaef0878fed96fca2", "bytes": 2874},
+    {"path": "CAPABILITY_BOUNDARY.md", "sha256": "be8c0f8c44890301e296f5e05a69a26d10e113830d2367f66243ff127e8c986e", "bytes": 1981},
+    {"path": "CAPABILITY_INVENTORY.md", "sha256": "70eddcb93150ca0ee2023e0d025f0d5c62f856d910977af2e23f829c0c14725f", "bytes": 3312},
+    {"path": "CHECKPOINT_PROJECTION.md", "sha256": "ba777b47ff1414843491b0072b9011afa941e4aa303257cd73b783bf99c45008", "bytes": 1931},
+    {"path": "EVIDENCE.md", "sha256": "4166fbddf6bdc13f959b93cbac94b51cad1e353a68ec677a344ae965298a710d", "bytes": 2297},
+    {"path": "EXAMPLE_FLOW.md", "sha256": "58ce1d57fc446c986ec3cd16f41b2bd66ce8c4c84c7ed24a18720087b87027a6", "bytes": 3248},
+    {"path": "HANDOFF.json", "sha256": "3704b30291a8c3a360d7e0fcdfb4c446971ed64f643afe9f715840a854d70638", "bytes": 1316},
+    {"path": "IMPLEMENTATION_PLAN.md", "sha256": "0afd908ad8557eae80bd7248b38caeae813ba9294a5b0b96986f91b5354cb165", "bytes": 7769},
+    {"path": "IMPLEMENTER_CHECKLIST.md", "sha256": "76ee1aea686354c165d7fe5160cabe562a898403bba757020a074267acd3e40b", "bytes": 2454},
+    {"path": "LANDING_MAP.md", "sha256": "93efa8e5b04726d2c26c0868544399b5d1bf517a0ef28f326eb568484953f647", "bytes": 1470},
+    {"path": "OPERATOR_ESCALATION.md", "sha256": "fa01f10bc5407445d1b1ad273e8e3133a56f5ed3de8f1befe3f8b18454ac4c71", "bytes": 3263},
+    {"path": "PROTOCOL.md", "sha256": "434b8ef4696f340bd893e67403d71f433a06161c87a66af7b01429183d31f30b", "bytes": 3702},
+    {"path": "README.md", "sha256": "6e3350871d89bc7e4b7792df1e76381d40a89cecb22488e2edb2386f30ba5a2e", "bytes": 4210},
+    {"path": "ROLE_CONTRACTS.md", "sha256": "54e9076f831ae24b0c35e05973dbf29432a61dfaa42ac41232b5d59c88445360", "bytes": 3045},
+    {"path": "SPRINTCTL_MAPPING.md", "sha256": "ba50e258304e8e55557d3eef4553179588a6419a996c556c85ec63ddab0bdd7f", "bytes": 3837},
+    {"path": "alignment_mvp.py", "sha256": "1cc71c56f6874f66be145e45fe6a1c4299800cf09f3971214ca5a91a8e6323e8", "bytes": 18390},
+    {"path": "fixtures/checkpoint-projection.expected.json", "sha256": "cad9a578d2330dbd16aedeea69db55c7ad9d60d198c271534d2c00f2045b7e55", "bytes": 2048},
+    {"path": "fixtures/explorer-output.sanitized.json", "sha256": "818de5b271ed896cfbd8aa716d3afd78771f594eb6a628957df3a8b9024168b9", "bytes": 1139},
+    {"path": "fixtures/planner-policy.sanitized.json", "sha256": "ff31ed4234dc054e19872ab0cf8f7a5bb5d9d047e1cf34cca17f76810ceb7b58", "bytes": 42},
+    {"path": "fixtures/premium-only-run.sanitized.json", "sha256": "48ccf98935675a24fe59a10c533f28e65988db89eaf39b6402ba97e75b62a1cf", "bytes": 515},
+    {"path": "fixtures/split-run.sanitized.json", "sha256": "5fdd75b1ff437232ae0d5f0aa5dcfd2ae43c040393f634da9349b07110a937ea", "bytes": 615},
+    {"path": "fixtures/sprintctl-item-show.sanitized.json", "sha256": "d12866c4ff0b65b2ed473608363a5c474ab6bd765f53da6f3a567a9dfa8e13a9", "bytes": 1646},
+    {"path": "scripts/verify_manifest.py", "sha256": "b5b34e1955e440b2d737100b56ae1fb43bfb388d0ae650a45b58094083c7319d", "bytes": 1738},
+    {"path": "tests/test_alignment_mvp.py", "sha256": "7715eec971b38bc3fd5f3655b7425946b5147925dd4ce88b08fff82670cb12d8", "bytes": 5942}
+  ]
+}

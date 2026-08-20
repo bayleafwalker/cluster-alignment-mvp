@@ -1,0 +1,27 @@
+{
+  "basis_revision": "item:123e4567-e89b-12d3-a456-426614174000@status:active",
+  "boundary_digest": "alignment-boundary sha256:ba32646e6d861e9fbdc1161997e2e266348100c71cfa82483016b1859290e4d8",
+  "budget": {"operations_limit": 12, "operations_used": 7},
+  "checkpoint": "SCOPE_EXPANSION",
+  "intent": "Investigate why appservice is degraded",
+  "material_findings": [
+    {"evidence": ["object:sha256:1111111111111111111111111111111111111111111111111111111111111111"], "finding_id": "deployment-ready", "severity": "info", "text": "Workload reports desired readiness."},
+    {"evidence": ["trace:sha256:2222222222222222222222222222222222222222222222222222222222222222"], "finding_id": "upstream-timeout", "severity": "high", "text": "Sanitized application output shows repeated upstream timeouts."},
+    {"evidence": ["object:sha256:3333333333333333333333333333333333333333333333333333333333333333"], "finding_id": "no-recent-rollout", "severity": "info", "text": "Sanitized rollout history has no recent change."}
+  ],
+  "projection_bytes": 1779,
+  "projection_digest": "sha256:093a720bf0de7a4faaf02936a8aae06b65d291c3950d0163b528623eb046640d",
+  "proposed_next_action": "Correlate the adjacent payments-api health window without mutation.",
+  "recent_material_events": [
+    {"evidence": ["object:sha256:1111111111111111111111111111111111111111111111111111111111111111"], "id": 501, "kind": "finding", "summary": "Workload reports desired readiness."},
+    {"evidence": ["trace:sha256:2222222222222222222222222222222222222222222222222222222222222222"], "id": 502, "kind": "finding", "summary": "Sanitized application output shows repeated upstream timeouts."},
+    {"evidence": [], "id": 503, "kind": "checkpoint", "summary": "Adjacent service observation requested."}
+  ],
+  "schema": "cluster-alignment-mvp/v1",
+  "scope": ["appservice"],
+  "scope_request": "payments-api",
+  "status": "active",
+  "status_revision": "item:123e4567-e89b-12d3-a456-426614174000@status:active",
+  "transcript_included": false,
+  "work_item": "appservice#142"
+}

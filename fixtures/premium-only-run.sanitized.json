@@ -1,0 +1,12 @@
+{
+  "material_findings": [
+    {"finding_id": "deployment-ready", "severity": "info", "summary": "Workload reports desired readiness."},
+    {"finding_id": "upstream-timeout", "severity": "high", "summary": "Sanitized application output shows repeated upstream timeouts."},
+    {"finding_id": "no-recent-rollout", "severity": "info", "summary": "Sanitized rollout history has no recent change."}
+  ],
+  "metrics": {
+    "premium_context_units": 1500,
+    "unsafe_attempts": 0,
+    "operator_interventions": 0
+  }
+}

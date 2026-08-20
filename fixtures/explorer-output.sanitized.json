@@ -1,0 +1,30 @@
+{
+  "schema": "cluster-alignment-mvp/v1",
+  "work_item": "appservice#142",
+  "basis_revision": "item:123e4567-e89b-12d3-a456-426614174000@status:active",
+  "operations_used": 7,
+  "operations_limit": 12,
+  "material_findings": [
+    {
+      "finding_id": "deployment-ready",
+      "text": "Workload reports desired readiness.",
+      "severity": "info",
+      "evidence": ["object:sha256:1111111111111111111111111111111111111111111111111111111111111111"]
+    },
+    {
+      "finding_id": "upstream-timeout",
+      "text": "Sanitized application output shows repeated upstream timeouts.",
+      "severity": "high",
+      "evidence": ["trace:sha256:2222222222222222222222222222222222222222222222222222222222222222"]
+    },
+    {
+      "finding_id": "no-recent-rollout",
+      "text": "Sanitized rollout history has no recent change.",
+      "severity": "info",
+      "evidence": ["object:sha256:3333333333333333333333333333333333333333333333333333333333333333"]
+    }
+  ],
+  "proposed_next_action": "Correlate the adjacent payments-api health window without mutation.",
+  "scope_request": "payments-api",
+  "checkpoint": "SCOPE_EXPANSION"
+}
