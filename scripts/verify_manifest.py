@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-IGNORED_PARTS = {"__pycache__", ".pytest_cache"}
+IGNORED_PARTS = {"__pycache__", ".pytest_cache", ".git"}
 
 
 def payload_paths() -> list[Path]:

@@ -36,7 +36,8 @@
     {"path": "fixtures/premium-only-run.sanitized.json", "sha256": "48ccf98935675a24fe59a10c533f28e65988db89eaf39b6402ba97e75b62a1cf", "bytes": 515},
     {"path": "fixtures/split-run.sanitized.json", "sha256": "5fdd75b1ff437232ae0d5f0aa5dcfd2ae43c040393f634da9349b07110a937ea", "bytes": 615},
     {"path": "fixtures/sprintctl-item-show.sanitized.json", "sha256": "d12866c4ff0b65b2ed473608363a5c474ab6bd765f53da6f3a567a9dfa8e13a9", "bytes": 1646},
-    {"path": "scripts/verify_manifest.py", "sha256": "b5b34e1955e440b2d737100b56ae1fb43bfb388d0ae650a45b58094083c7319d", "bytes": 1738},
+    {"path": ".gitignore", "sha256": "b6643e336f89230ef4a354459028304c09da87b6c097cfdd5993e50b7cb3125d", "bytes": 156},
+    {"path": "scripts/verify_manifest.py", "sha256": "a3dc702e92df3bb0b28f1863305c60c1a23c2bd98663837a5eeae92b0c424d45", "bytes": 1746},
     {"path": "tests/test_alignment_mvp.py", "sha256": "7715eec971b38bc3fd5f3655b7425946b5147925dd4ce88b08fff82670cb12d8", "bytes": 5942}
   ]
 }

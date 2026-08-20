@@ -1,0 +1,13 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Python test cache
+.pytest_cache/
+
+# Local build/test output
+*.egg-info/
+dist/
+build/
